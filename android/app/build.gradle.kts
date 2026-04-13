@@ -30,7 +30,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "BASE_URL", "\"https://jioni-family-api.up.railway.app/api/v1/\"")
+            buildConfigField("String", "BASE_URL", "\"https://jionifamily-production.up.railway.app/api/v1/\"")
         }
     }
 
