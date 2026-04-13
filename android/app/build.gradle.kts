@@ -22,6 +22,15 @@ android {
         buildConfigField("String", "BASE_URL", "\"http://10.0.2.2:8000/api/v1/\"")
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("keystore/jionifamily.jks")
+            storePassword = "jionifamily"
+            keyAlias = "jionifamily"
+            keyPassword = "jionifamily"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -30,6 +39,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("release")
             buildConfigField("String", "BASE_URL", "\"https://jionifamily-production.up.railway.app/api/v1/\"")
         }
     }

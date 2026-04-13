@@ -10,6 +10,7 @@ venv/
 android/.gradle/
 android/build/
 android/app/build/
+android/app/keystore/
 android/local.properties
 android/.idea/
 *.iml
