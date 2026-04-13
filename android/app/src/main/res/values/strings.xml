@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">지온이네 가족</string>
+
+    <!-- Login -->
+    <string name="login_title">누구세요?</string>
+    <string name="login_pin_hint">PIN 입력</string>
+    <string name="login_button">로그인</string>
+    <string name="login_error">PIN이 올바르지 않아요</string>
+
+    <!-- Avatars -->
+    <string name="avatar_mom">엄마</string>
+    <string name="avatar_dad">아빠</string>
+    <string name="avatar_jioni">지온이</string>
+
+    <!-- Home -->
+    <string name="greeting_parent">안녕하세요, %s!</string>
+    <string name="greeting_child">%s, 오늘도 화이팅!</string>
+    <string name="section_pending_approval">승인 대기</string>
+    <string name="section_this_week">이번 주 미션</string>
+    <string name="section_coin_status">코인 현황</string>
+    <string name="section_progress">주간 진행률</string>
+    <string name="coin_format">%d 코인</string>
+
+    <!-- Mission -->
+    <string name="mission_create">미션 만들기</string>
+    <string name="mission_name_hint">미션 이름</string>
+    <string name="mission_desc_hint">미션 설명</string>
+    <string name="mission_reward_hint">보상 코인</string>
+    <string name="mission_recurring">반복 미션</string>
+    <string name="mission_complete">완료!</string>
+    <string name="mission_approve">승인</string>
+    <string name="mission_reject">거절</string>
+
+    <!-- Status -->
+    <string name="status_pending">대기중</string>
+    <string name="status_submitted">확인중</string>
+    <string name="status_approved">승인됨</string>
+    <string name="status_rejected">거절됨</string>
+
+    <!-- Categories -->
+    <string name="category_study">공부</string>
+    <string name="category_exercise">운동</string>
+    <string name="category_chores">집안일</string>
+    <string name="category_other">기타</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">홈</string>
+    <string name="nav_create_mission">미션 만들기</string>
+    <string name="nav_my_missions">내 미션</string>
+    <string name="nav_settings">설정</string>
+
+    <!-- Settings -->
+    <string name="settings_change_pin">PIN 변경</string>
+    <string name="settings_logout">로그아웃</string>
+    <string name="settings_app_info">앱 정보</string>
+
+    <!-- Common -->
+    <string name="empty_missions">아직 미션이 없어요</string>
+    <string name="empty_pending">승인 대기 중인 미션이 없어요</string>
+    <string name="error_network">네트워크 오류가 발생했어요</string>
+    <string name="btn_retry">다시 시도</string>
+    <string name="btn_save">저장</string>
+    <string name="btn_cancel">취소</string>
+    <string name="btn_delete">삭제</string>
+
+    <!-- Days -->
+    <string name="day_mon">월</string>
+    <string name="day_tue">화</string>
+    <string name="day_wed">수</string>
+    <string name="day_thu">목</string>
+    <string name="day_fri">금</string>
+    <string name="day_sat">토</string>
+    <string name="day_sun">일</string>
+</resources>
