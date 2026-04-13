@@ -12,5 +12,17 @@ class Settings(BaseSettings):
 
     model_config = {"env_file": ".env", "extra": "ignore"}
 
+    @property
+    def async_database_url(self) -> str:
+        """Convert DATABASE_URL to async-compatible format.
+        Railway provides postgresql:// but asyncpg needs postgresql+asyncpg://
+        """
+        url = self.DATABASE_URL
+        if url.startswith("postgresql://"):
+            return url.replace("postgresql://", "postgresql+asyncpg://", 1)
+        if url.startswith("postgres://"):
+            return url.replace("postgres://", "postgresql+asyncpg://", 1)
+        return url
+
 
 settings = Settings()
