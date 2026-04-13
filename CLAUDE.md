@@ -53,8 +53,9 @@ pytest                                 # Run tests
 
 ## Key Design Decisions
 
-- **Weekly cycle**: ISO 8601 Monday start, timezone Asia/Seoul
-- **Recurring missions**: Template pattern. Completion records lazy-created on weekly query
+- **Weekly cycle**: Sunday start, timezone Asia/Seoul
+- **Weekly reset**: Past week's pending/submitted completions auto-marked as "missed"
+- **Recurring missions**: On/off toggle. Completion records lazy-created on weekly query. Non-recurring missions only get completions in their creation week
 - **Coin atomicity**: SELECT FOR UPDATE in transaction for balance changes
 - **Auto-login**: Encrypted DataStore stores JWT + avatar_key
 - **Role routing**: NavGraph checks role → separate bottom nav per role
